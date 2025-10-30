@@ -3,17 +3,46 @@ title: Welcome!
 layout: page
 ---
 
-<div class="container col-xl-10 col-xxl-8 px-4 py-4">
-  <div class="row align-items-center g-lg-5 py-5">
+<div class="container col-xl-10 col-xxl-8">
+  <div class="row align-items-center">
     <div class="col-lg-7 text-center text-lg-start">
-      <h1 class="display-4 fw-bold lh-1 mb-3 fancy">Hello! Hey! What's up?</h1>
-      <p class="col-lg-10 fs-4">cruller.club is a savvy systems design and engineering consultancy rooted in the principles of open-source software, community development, and tasty pastries. Doesn't that sound quirky?!</p>
+      <h1 class="display-4 fancy">Hello! Hey! What's up?!</h1>
+      <p class="col-lg-10 fs-4"><span class="fancy">cruller.club</span> is a savvy systems design and engineering consultancy rooted in the principles of open-source software, community development, and tasty pastries. Doesn't that sound quirky?!</p>
     </div>
     <div class="col-md-10 mx-auto col-lg-5">
-      <small class="text-muted fancy"><em>We're a small team and we do all of our work out in the open, so...</em></small>
-      <a href="https://github.com/cruller-club" class="w-100 btn btn-lg btn-outline-primary my-4 fancy" type="submit">Get involved @ <i class="fab fa-github"></i></a>
+      <div class="p-2 p-md-3">
+        <p class="text-muted fs-5"><em>We're a small team and we do all of our work out in the open, so...</em></p>
+
+        <a href="https://github.com/cruller-club" class="w-100 btn btn-lg btn-outline-primary my-4">Get involved @ <i class="fab fa-github"></i></a>
+      </div>
     </div>
   </div>
 </div>
 
-<h1 class="pb-1 border-bottom fancy">Our active projects</h1>
+<hr>
+
+<h1 class="fancy">Our active projects</h1>
+
+<div class="album">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-lg-3 g-3 py-5">
+      {% for p in site.projects reversed %}
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <a href="{{ p.app_url }}">
+            <img src="assets/images/{{ p.thumbnail }}" title="{{ p.title }}" class="card-img-top" />
+          </a>
+          <div class="card-body">
+            <h2 class="card-title fancy">{{ p.title }} <i class="text-tiffany {{ p.icon }}"></i></h2>
+            <p class="card-text">{{ p.content }}</p>
+          </div>
+          <div class="card-footer">
+            <a href="{{ p.app_url }}" class="icon-link d-inline-flex align-items-center">Goto `{{ p.title }}`!</a>
+            <small><i class="text-muted px-2 fas fa-external-link-alt"></i></small>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
