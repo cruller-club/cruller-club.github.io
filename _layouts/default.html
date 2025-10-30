@@ -1,24 +1,19 @@
-<!doctype html>
-<html lang="en" class="h-100">
+<!DOCTYPE html>
+<html>
 
   {% include head.html %}
 
-  <body class="d-flex flex-column h-100">
+  <body>
+
     {% include header.html %}
 
-    <main class="flex-shrink-0">
-      <div class="container-fluid">
-        
-        <div class="container">
-
-          {{ content }}
-        
-        </div>
-
-      </div>
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      {{content}}
     </main>
 
     {% include footer.html %}
+
   </body>
 
   {% include scripts.html %}
