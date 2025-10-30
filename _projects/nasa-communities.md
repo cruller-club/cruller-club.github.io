@@ -2,7 +2,7 @@
 layout: post
 title: "NASA Communities"
 app_url: "https://nasa-communities.org"
-thumbnail: placeholder.png
+thumbnail: nasa-communities.png
 icon: "far fa-stars"
 tags:
 ---

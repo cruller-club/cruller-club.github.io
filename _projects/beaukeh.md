@@ -2,7 +2,7 @@
 layout: post
 title: "beaukeh"
 app_url: "https://beaukeh.cruller.club"
-thumbnail: placeholder.png
+thumbnail: beaukeh.png
 icon: "fas fa-camera-retro"
 tags:
 ---
