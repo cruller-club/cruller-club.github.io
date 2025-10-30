@@ -2,7 +2,7 @@
 layout: post
 title: "Risk Redux"
 app_url: "https://risk-redux.io"
-thumbnail: placeholder.png
+thumbnail: risk-redux.png
 icon: "fas fa-circle-check"
 tags:
 ---

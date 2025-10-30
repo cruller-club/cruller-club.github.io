@@ -2,7 +2,7 @@
 layout: post
 title: "NASA Fail"
 app_url: "https://nasa.fail"
-thumbnail: placeholder.png
+thumbnail: nasa-fail.png
 icon: "fas fa-rocket"
 tags:
 ---
